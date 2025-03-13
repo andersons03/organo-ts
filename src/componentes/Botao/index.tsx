@@ -5,9 +5,9 @@ interface BotaoProps {
   children: ReactElement
 }
 
-const Botao = (props: BotaoProps) => {
+const Botao = ({children}: BotaoProps) => {
     return (<button className='botao'>
-        {props.children}
+        {children}
     </button>)
 }
 
